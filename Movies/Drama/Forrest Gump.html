@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forrest Gump</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    
+    
+    
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>Forrest Gump</h1><br>
+            <img src="https://www.themoviedb.org/t/p/original/h5J4W4veyxMXDMjeNxZI46TsHOb.jpg" style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+               <p>
+                <span><b>IMDB: </b>8.8</span>
+                <span><b>Rotten Tomato: </b>71%</span>
+            </p>
+        </div><br>
+        <p><b>Year:</b> 1994</p>
+        <p><b>Rating:</b> PG-13</p>
+        <p><b>Director:</b> Robert Zemeckis</p>
+        <p><b>Runtime:</b> 2h 22m</p>
+        <p><b>Genres:</b> Drama/Romance</p><br>
+        <p><b>Summary:</b><br>
+            Forrest, a man with low IQ, recounts the early years of his life when he found himself in the middle of key historical events. All he wants now is to be reunited with his childhood sweetheart, Jenny.
+        </p>
+                
+       
+        </div>
+        <div class="trailer">
+            
+            <div class="realTralier">
+            <h2 class="h2">Movie Trailer: </h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/bLvqoHBptjg" title="Forrest Gump - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+                <div class="trailerButton">
+                    <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                    <script type="text/javascript">
+                        function copyLink(){
+                            let link = 'https://youtu.be/5PSNL1qE6VY?si=jTIEbFGQ-FZJykSt';
+                            navigator.clipboard.writeText(link);
+                            alert('Youtube link copied to the clipboard.');
+                        }
+                    </script>
+                </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    <img src="data:image/jpeg;base64,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">
+                </div>
+                <div class="name">
+                    Tom Hanks
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Robin_Wright_2009.jpg">
+                </div>
+                <div class="name">
+                    Robin Wright
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://flxt.tmsimg.com/assets/22818_v9_bb.jpg">
+                </div>
+                <div class="name">
+                    Gary Sinise
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://www.themoviedb.org/t/p/w500/5fBK36MdmdwQQMuP0W70rXADXih.jpg">
+                </div>
+                <div class="name">
+                    Sally Field
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://images.mubicdn.net/images/cast_member/19895/cache-101107-1416464170/image-w856.jpg?size=800x">
+                </div>
+                <div class="name">
+                    Mykelti Williamson
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../movieholic.html " target="_blank"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../movies.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

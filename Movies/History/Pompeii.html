@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pompeii</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>Pompeii</h1><br>
+            <img src="https://m.media-amazon.com/images/M/MV5BNjJkMzhjZWItNzVjMS00N2Y0LWE5YWMtY2Q5NGIzOWZmOTEzXkEyXkFqcGdeQXVyMTAwMzUyMzUy._V1_FMjpg_UX1000_.jpg" style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+                <p>
+                    <span><b>IMDB: </b>5.5</span>
+                    <span><b>Rotten Tomato: </b>27%</span>
+                </p>
+            </div><br>
+            
+            <br>
+            <p><b>Year:</b> 2014</p>
+            <p><b>Rating:</b> PG-13</p>
+            <p><b>Director:</b>Paul W. S. Anderson</p>
+            <p><b>Runtime:</b> 1h 45m</p>
+            <p><b>Genres:</b> History, Action</p><br>
+            <p><b>Summary:</b><br>
+                Milo, a slave turned gladiator, falls in love with Cassia. Things take a turn when she is betrothed to a corrupt Roman Senator and he has to fight against time to save her.
+            </p>
+        </div>
+        <div class="trailer">
+            
+            <div class="realTrailer">
+            <h2 class="h2">Movie Tralier: </h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/t6TRwfxDICM" title="POMPEII - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+                <div class="trailerButton">
+                    <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                    <script type="text/javascript">
+                        function copyLink(){
+                            let link = 'https://youtu.be/5PSNL1qE6VY?si=jTIEbFGQ-FZJykSt';
+                            navigator.clipboard.writeText(link);
+                            alert('Youtube link copied to the clipboard.');
+                        }
+                    </script>
+                </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    
+                    <img src="https://media.self.com/photos/61115e0d617a686e8e360bc1/1:1/w_2117,h_2117,c_limit/1197765649">
+                </div>
+                <div class="name">
+                    Kit Harrington
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://flxt.tmsimg.com/assets/81374_v9_bc.jpg">
+                </div>
+                <div class="name">
+                    Emily Browning
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTN8nRB1L327Bu6a9pr_TqSfcjmO0xaBC_VZ8tH5RArAIt0MTuA18RgnQKb85XF1IXqXW1t-ezzRHfgvPk">
+                </div>
+                <div class="name">
+                    Kiefer Sutherland
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSMrR1ArYi1aByv-cCEp9fMzh9CRUbrkhCFaL8dqvz9ttwLQPqFGZAysfRHyMG6zxdG1By4A_lomV3pC7c">
+                </div>
+                <div class="name">
+                    Adewale Akinnuoye-Agbaje
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTUzHOhgd9mrmBwumm_HyCN7qCWGvGBN44gOkfqS-pNEaCGPA2vY8RoxQxz7dNGv6AhzaqD9m7IsHxa41Q">
+                </div>
+                <div class="name">
+                    Jessica Lucas
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../movieholic.html " target="_blank"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../movies.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

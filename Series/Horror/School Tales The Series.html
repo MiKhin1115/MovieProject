@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Tales The Series</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    
+    
+    
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>School Talse The Series</h1><br>
+            <img src="https://tinyurl.com/46dcmy6s" style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+                <p>
+                    <span><b>IMDB: </b>5.3</span>
+                    <span><b>Rotten Tomato: </b>43%</span>
+                </p>
+            </div><br>
+            
+            <br>
+            <p><b>Year:</b> 2022</p>
+            <p><b>Rating:</b> PG-17</p>
+            <p><b>Director:</b>  Seasoned Thai horror directors</p>
+            <p><b>Runtime:</b> 8 Episodes(45-50m per episode)</p>
+            <p><b>Genres:</b>  Horror, Mystrey</p><br>
+            <p><b>Summary:</b><br>
+                Many unspeakable horrors take place in the school corridors after dark. During the day, the building belongs to the students, but at night it's a different story, as a group of talented Thai horror directors bring their horror to the hallways.
+            </p>
+        </div>
+        <div class="trailer">
+            
+            <div class="realTrailer">
+            <h2 class="h2">Movie Tralier: </h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t-CtcO9ktpw?si=euUuS_MJpZcrOjgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+            <div class="trailerButton">
+                <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                <script type="text/javascript">
+                    function copyLink(){
+                        let link = 'https://youtu.be/32RAq6JzY-w?si=JJ3RaYTHrvQ_VmCf';
+                        navigator.clipboard.writeText(link);
+                        alert('Youtube link copied to the clipboard.');
+                    }
+                </script>
+            </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    
+                    <img src="https://tinyurl.com/3ym4zyx3">
+                </div>
+                <div class="name">
+                    Kay Lertsittichai
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/veths2s8">
+                </div>
+                <div class="name">
+                    Thasorn Klinnium
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/u3ttmry3">
+                </div>
+                <div class="name">
+                    Suppapong Udomkaewkanjana
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/mvpkpyc4">
+                </div>
+                <div class="name">
+                   Patchanan Jiajirachote
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/5n6m98p8">
+                </div>
+                <div class="name">
+                    Jennis Oprasert
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../../home.html"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../../movies.html"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

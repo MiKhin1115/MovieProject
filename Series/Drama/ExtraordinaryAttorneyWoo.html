@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraordinary Attorney Woo</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+     <div class="firstDiv">
+        <div class="description-box">
+            <h1>Extraordinary Attorney Woo</h1><br>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTAzNzlhYjItN2MxZS00ZTg4LWFmZGQtN2I1ZWE5YjgzODY3XkEyXkFqcGdeQXVyNjk1NzU1Mjk@._V1_.jpg" style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+                <p>
+                    <span><b>IMDB: </b>8.7</span>
+                    <span><b>Rotten Tomato: </b>100%</span>
+                </p>
+            </div><br>
+            
+            <br>
+            <p><b>Year:</b>2022</p>
+            <p><b>Rating:</b> PG</p>
+            <p><b>Director:</b> Yoo In-shik</p>
+            <p><b>Runtime:</b> 16 Eps (1h 15m Per Ep)</p>
+            <p><b>Genres:</b> Drama, Comedy</p><br>
+            <p><b>Summary:</b><br>
+                 Woo Young-woo, an autistic lawyer who is raised by her single father. She grows up with one friend at school, Dong Geu-ra-mi, an oddball girl who protects her from school bullies. Due to her 164 I.Q., impressive memory and creative thought process, she graduates at the top of her law school class at Seoul National University.
+
+            </p>
+        </div>
+        <div class="trailer">
+            
+            <div class="realTrailer">
+            <h2 class="h2">Series Trailer: </h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/9SdYFYflVbw" title="Extraordinary Attorney Woo | Official Trailer | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+                <div class="trailerButton">
+                    <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                    <script type="text/javascript">
+                        function copyLink(){
+                            let link = 'https://youtu.be/shW9i6k8cB0?si=tCaNhilLOB1JzYqZ';
+                            navigator.clipboard.writeText(link);
+                            alert('Youtube link copied to the clipboard.');
+                        }
+                    </script>
+                </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    
+                    <img src="https://i.mydramalist.com/v7Evg_5c.jpg">
+                </div>
+                <div class="name">
+                    Park Eun-bin
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://i.mydramalist.com/qv3mz_5f.jpg">
+                </div>
+                <div class="name">
+                    Kang Tae-oh
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://i.mydramalist.com/EeKV5_5c.jpg">
+                </div>
+                <div class="name">
+                    Kang Ki-young
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://i.mydramalist.com/jz0zd_5f.jpg">
+                </div>
+                <div class="name">
+                    Ha Yoon-kyung
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://i.mydramalist.com/2LA3d_5f.jpg">
+                </div>
+                <div class="name">
+                    Joo Jong-hyuk
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../movieholic.html " target="_blank"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../movies.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

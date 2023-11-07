@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunkirk</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>Dunkirk</h1><br>
+            <img src="https://m.media-amazon.com/images/M/MV5BN2YyZjQ0NTEtNzU5MS00NGZkLTg0MTEtYzJmMWY3MWRhZjM2XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_FMjpg_UX1000_.jpg" style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+                <p>
+                    <span><b>IMDB: </b>7.8</span>
+                    <span><b>Rotten Tomato: </b>92%</span>
+                </p>
+            </div><br>
+            
+            <br>
+            <p><b>Year:</b> 2017</p>
+            <p><b>Rating:</b> PG-13</p>
+            <p><b>Director:</b> Christopher Nolan</p>
+            <p><b>Runtime:</b> 1h 46m</p>
+            <p><b>Genres:</b> History, War</p><br>
+            <p><b>Summary:</b><br>
+                Four hundred thousand British and French soldiers are hole up in the French port town of Dunkirk. The only way out is via sea, and the Germans have air superiority, bombing the British soldiers and ships without much opposition. The situation looks dire and, in desperation, Britain sends civilian boats in addition to its hard-pressed Navy to try to evacuate the beleaguered forces. This is that story, seen through the eyes of a soldier amongst those trapped forces, two Royal Air Force fighter pilots, and a group of civilians on their boat, part of the evacuation fleet
+            </p>
+        </div>
+        <div class="trailer">
+            
+            <div class="realTrailer">
+            <h2 class="h2">Movie Tralier: </h2>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/T7O7BtBnsG4" title="DUNKIRK - OFFICIAL MAIN TRAILER [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+                <div class="trailerButton">
+                    <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                    <script type="text/javascript">
+                        function copyLink(){
+                            let link = 'https://youtu.be/5PSNL1qE6VY?si=jTIEbFGQ-FZJykSt';
+                            navigator.clipboard.writeText(link);
+                            alert('Youtube link copied to the clipboard.');
+                        }
+                    </script>
+                </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+                <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTUxMzU2MTk1OF5BMl5BanBnXkFtZTgwNzg4NjAwMzI@._V1_.jpg">
+                </div>
+                <div class="name">
+                    Harry Styles
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://i.guim.co.uk/img/media/f75dde2009f28f66c1e4969993a4d6772eb354bf/0_1492_4764_2857/master/4764.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=5578bfd4da4f59c7d7dac1c855cbb46b">
+                </div>
+                <div class="name">
+                    Fionn Whitehead
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://cdn.britannica.com/10/215010-050-A44F9280/Irish-actor-Cillian-Murphy-2017.jpg">
+                </div>
+                <div class="name">
+                    Cillian Murphy
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://flxt.tmsimg.com/assets/269411_v9_bd.jpg">
+                </div>
+                <div class="name">
+                   Tom Hardy
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Jack_Lowden_at_the_2019_Mary_Queen_of_Scots_premiere_%28cropped%29.jpg">
+                </div>
+                <div class="name">
+                   Jack Lowden
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../movieholic.html " target="_blank"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../movies.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

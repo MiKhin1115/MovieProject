@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Story 4: 2019</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    
+    
+    
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>Toy Story 4 : 2019</h1><br>
+            <img src="https://tinyurl.com/cu624ue9" style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+                <p>
+                    <span><b>IMDB: </b>7.7</span>
+                    <span><b>Rotten Tomato: </b>97%</span>
+                </p>
+            </div><br>
+            
+            <br>
+            <p><b>Year:</b> 2019</p>
+            <p><b>Rating:</b> G</p>
+            <p><b>Director:</b> Josh Cooley</p>
+            <p><b>Runtime:</b> 1h 40m</p>
+            <p><b>Genres:</b> Animation / Adventure / Comedy / Family / Fantasy</p><br>
+            <p><b>Summary:</b><br>
+                When a new toy called 'Forky' joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.
+            </p>
+        </div>
+        <div class="trailer">
+            
+            <div class="realTrailer">
+            <h2 class="h2">Movie Trailer: </h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/wmiIUN-7qhE?si=hF-86SSlNDiY6dJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+                <div class="trailerButton">
+                    <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                    <script type="text/javascript">
+                        function copyLink(){
+                            let link = 'https://youtu.be/5PSNL1qE6VY?si=jTIEbFGQ-FZJykSt';
+                            navigator.clipboard.writeText(link);
+                            alert('Youtube link copied to the clipboard.');
+                        }
+                    </script>
+                </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    
+                    <img src="https://tinyurl.com/2p9879dp">
+                </div>
+                <div class="name">
+                    Tom Hanks<br>(Woody)
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/2n8x77d2">
+                </div>
+                <div class="name">
+                    Tim Allen<br>(Buzz Lightyear)
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/b9rua4ww">
+                </div>
+                <div class="name">
+                    Annie Potts<br>(Bo Peep)
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/4ts896a2">
+                </div>
+                <div class="name">
+                    Tony Hale<br>(Forky)
+                    
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/3b43zb7s">
+                </div>
+                <div class="name">
+                    Madeleine McGraw<br>(Bonnie)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../movieholic.html " target="_blank"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../movies.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

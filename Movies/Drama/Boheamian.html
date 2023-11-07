@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boheamian Raphsody</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    
+    
+    
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>Boheamian Raphsody</h1><br>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTA2NDc3Njg5NDVeQTJeQWpwZ15BbWU4MDc1NDcxNTUz._V1_.jpg " style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+               <p>
+                <span><b>IMDB: </b>7.9</span>
+                <span><b>Rotten Tomato: </b>60%</span>
+            </p>
+        </div><br>
+        <p><b>Year:</b> 2018</p>
+        <p><b>Rating:</b> PG-13</p>
+        <p><b>Director:</b> Bryan Singer, Dexter Fletcher</p>
+        <p><b>Runtime:</b> 2h 14m</p>
+        <p><b>Genres:</b> Drama</p><br>
+        <p><b>Summary:</b><br>
+            With his impeccable vocal abilities, Freddie Mercury and his rock band, Queen, achieve superstardom. However, amidst his skyrocketing success, he grapples with his ego, sexuality and a fatal illness.
+        </p>
+                
+       
+        </div>
+        <div class="trailer">
+            
+            <div class="realTrailer">
+            <h2 class="h2">Movie Trailer: </h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/mP0VHJYFOAU" title="Bohemian Rhapsody | Official Trailer [HD] | 20th Century FOX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+                <div class="trailerButton">
+                    <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                    <script type="text/javascript">
+                        function copyLink(){
+                            let link = 'https://youtu.be/5PSNL1qE6VY?si=jTIEbFGQ-FZJykSt';
+                            navigator.clipboard.writeText(link);
+                            alert('Youtube link copied to the clipboard.');
+                        }
+                    </script>
+                </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/rami-malek-64b016988dc7f.jpg?crop=0.480xw:0.754xh;0.264xw,0.0880xh&resize=1200:*">
+                </div>
+                <div class="name">      
+                    Rami Malek
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://www.themoviedb.org/t/p/w500/b20ijbr2tbqlGvqZgkCpNZ5AYvS.jpg">
+                </div>
+                <div class="name">
+                    Ben Hardy
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://bilder.fernsehserien.de/gfx/person_1000/g/gwilym-lee-27959-1640621573-w-893.jpg.jpg">
+                </div>
+                <div class="name">
+                    Gwilym Lee
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTcwNzA3MzMwOF5BMl5BanBnXkFtZTcwOTkzNjI5OA@@._V1_.jpg">
+                </div>
+                <div class="name">
+                    Joseph Mazzello
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://flxt.tmsimg.com/assets/512480_v9_bb.jpg">
+                </div>
+                <div class="name">
+                    Lucy Boyton
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../movieholic.html " target="_blank"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../movies.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

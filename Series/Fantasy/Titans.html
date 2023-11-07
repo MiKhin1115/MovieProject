@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titans</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    
+    
+    
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>Titans</h1><br>
+            <img src="https://tinyurl.com/4havrzbe" style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+               <p>
+                <span><b>IMDB: </b>7.5</span>
+                <span><b>Rotten Tomato: </b>89%</span>
+            </p>
+        </div><br>
+        
+        <p><b>Year:</b>2018</p>
+        <p><b>Rating:</b>PG-17</p>
+        <p><b>Director:</b>Robert Ortiz  </p>
+        <p><b>Runtime:</b>49 Episodes(40-55 min per Episode) </p>
+        <p><b>Genres:</b>Action-adventure,Drama,Science fantasy,Superhero </p><br>
+        <p><b>Summary:</b><br>
+            This gritty take on the "Teen Titans" franchise follows young heroes from across the DC Universe as they come of age and find where they belong. Dick Grayson and Rachel Roth, a special girl possessed by a strange darkness, get involved in a conspiracy that could bring Hell on Earth. Hot-headed Starfire and lovable Beast Boy join them along the way as together they become a surrogate family and team of heroes fighting evil.
+        </p>
+        </div>
+        <div class="trailer">
+            
+            <div class="realTrailer">
+            <h2 class="h2">Movie Tralier: </h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/iH44Z0QwrWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+                <div class="trailerButton">
+                    <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                    <script type="text/javascript">
+                        function copyLink(){
+                            let link = 'https://youtu.be/shW9i6k8cB0?si=tCaNhilLOB1JzYqZ';
+                            navigator.clipboard.writeText(link);
+                            alert('Youtube link copied to the clipboard.');
+                        }
+                    </script>
+                </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    
+                    <img src="https://tinyurl.com/5n6rj9pz">
+                </div>
+                <div class="name">
+                   Brenton Thwaites
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/262ke4mt">
+                </div>
+                <div class="name">
+                   Teagan Croft
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/3bajahfs">
+                </div>
+                <div class="name">
+                    Anna Diop
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://tinyurl.com/bdh3sxft">
+                </div>
+                <div class="name">
+                    Curran Walters
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                   
+                    <img src="https://tinyurl.com/5n76zvms">
+                </div>
+                <div class="name">
+                     Minka Kelly
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../movieholic.html " target="_blank"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../movies.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

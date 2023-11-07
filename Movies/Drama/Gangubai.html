@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gangubai</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    
+    
+    
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>Gangubai</h1><br>
+            <img src="https://tntribune.com/wp-content/uploads/2021/03/Movie-poster-of-Gangubai-Kathiawadi.40aliaa08-.-Twitter-768x1024-1.jpg" style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+               <p>
+                <span><b>IMDB: </b>7.8</span>
+                <span><b>Rotten Tomato: </b>90%</span>
+            </p>
+        </div><br>
+        <p><b>Year:</b> 2022</p>
+        <p><b>Rating:</b> PG-13</p>
+        <p><b>Director:</b> Sanjay Leela Bhansali</p>
+        <p><b>Runtime:</b> 2h 34m</p>
+        <p><b>Genres:</b> Drama/Crime</p><br>
+        <p><b>Summary:</b><br>
+            Gangubai wanted to be an actress and years back eloped to Bombay with her boyfriend Ramnik who sold her.Gangubai did not have option to return back but she gained respect from fellow women as she would be their main support to go against Sheila Masi.In coming times Gangubai bonds with Don Rahim Lala and develops a relationship with him.Gangubai is soon known as the mafia queen and wants better lives for women of her community.She decides to enter politics.
+        </p>
+        </div>
+        <div class="trailer">
+            
+            <div class="realTrailer">
+            <h2 class="h2">Movie Trailer: </h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/N1ZwRv3vJJY" title="Gangubai Kathiawadi | Official Trailer| Sanjay Leela Bhansali, Alia Bhatt, Ajay Devgn |25th Feb 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+                <div class="trailerButton">
+                    <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                    <script type="text/javascript">
+                        function copyLink(){
+                            let link = 'https://youtu.be/5PSNL1qE6VY?si=jTIEbFGQ-FZJykSt';
+                            navigator.clipboard.writeText(link);
+                            alert('Youtube link copied to the clipboard.');
+                        }
+                    </script>
+                </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://assets.vogue.in/photos/622f9af651da11b2e5b0b176/1:1/w_1080,h_1080,c_limit/7%20times%20Alia%20Bhatt%20served%20sublime%20beauty%20moments%20.jpg">
+                </div>
+                <div class="name">
+                   Alia Bhatt
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://starsunfolded.com/wp-content/uploads/2016/07/Shantanu-Maheshwari.jpg">
+                </div>
+                <div class="name">
+                  Shantanu Maheshwari
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="data:image/jpeg;base64,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">
+                </div>
+                <div class="name">
+                  Vjay Raaz
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jim-sarbh-27648-20-12-2017-04-00-53.jpg">
+                </div>
+                <div class="name">
+                    Jim Sarbh
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://st1.bollywoodlife.com/wp-content/uploads/2021/03/Ajay-Devgn.jpg">
+                </div>
+                <div class="name">
+                   Ajay Devgn
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../movieholic.html " target="_blank"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../movies.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

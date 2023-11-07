@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodbye</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    
+    
+    
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>Goodbye</h1><br>
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Goodbye_2022_film_poster.jpg" style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+               <p>
+                <span><b>IMDB: </b>6.8</span>
+                <span><b>Rotten Tomato: </b>40%</span>
+            </p>
+        </div><br>
+        <p><b>Year:</b> 2022</p>
+        <p><b>Rating:</b> PG</p>
+        <p><b>Director:</b> Vikas Bahi</p>
+        <p><b>Runtime:</b> 2h 22m</p>
+        <p><b>Genres:</b> Drama/Comedy</p><br>
+        <p><b>Summary:</b><br>
+            A family crumbles when the mother suddenly passes away and the children try to rush home to complete her final rites. However, differing opinions cause clashes among the clan.
+        </p>
+        </div>
+        <div class="trailer">
+            
+            <div class="realTrailer">
+            <h2 class="h2">Movie Trailer: </h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/QKJkxHPrDew" title="Goodbye | Official Trailer | Rashmika Mandanna, Amitabh Bachchan, Neena Gupta | Netflix India" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+                <div class="trailerButton">
+                    <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                    <script type="text/javascript">
+                        function copyLink(){
+                            let link = 'https://youtu.be/5PSNL1qE6VY?si=jTIEbFGQ-FZJykSt';
+                            navigator.clipboard.writeText(link);
+                            alert('Youtube link copied to the clipboard.');
+                        }
+                    </script>
+                </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://flxt.tmsimg.com/assets/1032149_v9_aa.jpg">
+                </div>
+                <div class="name">
+                   Rashmika Mandanna
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/amitabh-bachchan-138-12-09-2017-02-34-37.jpg">
+                </div>
+                <div class="name">
+                  Amitabh Bachchan
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://starswiki.in/wp-content/uploads/2020/02/Pavail-Gulati.jpg">
+                </div>
+                <div class="name">
+                   Pavail Gulati
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://images.news18.com/ibnlive/uploads/2022/11/neena-gupta.jpg">
+                </div>
+                <div class="name">
+                  Neena Gupta
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://i.zoomtventertainment.com/story/elli_avram.jpg">
+                </div>
+                <div class="name">
+                 Elli Avrram
+                </div>
+            </div>
+        </div>
+               
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../movieholic.html " target="_blank"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../movies.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:   #081b29;
+    color: white;
+}
+.whole{
+    width: 100%;
+}
+h3{
+    font-size: xx-large;
+}
+.trailer{
+    padding: 25px;
+    background-color:   #081b29;
+    font-size: x-large;
+}
+.button4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.description-box{
+    margin-top: 20px;
+    background-color:   #081b29;
+    padding: 10px 20px;
+    font-size: larger;
+}
+.description-box p{
+    text-align: justify;
+}
+.trailerButton button{
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.trailerButton button:hover{
+    background-color:#0ef;
+}
+.trailerButton button:active{
+    color: #004eff;
+    transform: scale(1.2);
+}
+.trailerButton-like{
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+input{
+    width: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin: 0 7px;
+    pointer-events: none;
+}
+.trailerButton-like button{ 
+    color: #fff;
+    background:none;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 7px 0;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.trailerButton-like button:hover{
+    color: #0ef;
+}
+.trailerButton-like button:active{
+    color: #004eff;
+    transform: scale(1.2);
+}
+.firstDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.star {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star.active {
+    color: gold;
+}
+
+.rating-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.secondDiv{
+    width: 100%;
+    background-color:   #081b29;
+}
+.cast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.cast .image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.cast .name{
+    font-weight: bold;
+   text-align: center;
+   font-size: large;
+}
+.thirdbox{
+    background-color: #081b29;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.thirdbox button{
+    background-color: rgb(247, 245, 245);
+    padding: 20px;
+    font-size: larger;
+    border-radius: 20%;
+    margin: 20px;
+    border: none;
+}
+.thirdbox a{text-decoration: none;color: rgb(20, 47, 117);}
+
+.rating {
+    font-size: 24px;
+}
+/*@media only screen and (min-width: 1300px) {
+    .trailerButton button{width: 100px; height: 50px;}}
+@media only screen and (max-width: 1300px) {
+    iframe {width:1200px;height: 800px;  }}
+@media only screen and (max-width: 1200px) {
+    iframe {width:980px;height: 600px;  }}
+@media only screen and (max-width: 992px) {
+    iframe {width:890px;height: 500px;  }
+  } */
+  @media only screen and (min-width: 800px) {
+    .firstDiv{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+  } 
+@media screen and (max-width: 760px) {
+    iframe {width:500px;height: 450px;  }
+    .trailerButton button{width: 70px;}
+}
+@media screen and (max-width: 420px) {
+    iframe {width:350px;height: 350px;  }
+    .trailerButton button{width: 70px;}
+    h2.h2{font-size:medium;}
+    input{font-size: 10px; width: 25px;margin: 5px 0;}
+    .trailerButton-like button{font-size: 10px;padding: 0 5px;margin: 5px 0;margin-left: 5px;}
+}
+@media screen and (max-width: 280px) {
+    iframe {width:250px;height: 200px;  }
+    .trailerButton button{width: 50px;}
+    h2.h2{font-size:medium;}
+    input{font-size: 10px; width: 25px;margin: 5px 0;}
+    .trailerButton-like button{font-size: 10px;padding: 0 5px;margin: 5px 0;margin-left: 5px;}
+}
+
+  
+ 
+ 
+  
+  
+  

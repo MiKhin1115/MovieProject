@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride On</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    
+    
+    
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>Ride On</h1><br>
+            <img src="https://cdn1.clickthecity.com/images/movies/poster/600/19226_3.jpg " style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+               <p>
+                <span><b>IMDB: </b>6.3</span>
+                <span><b>Rotten Tomato: </b>54%</span>
+            </p>
+        </div><br>
+        <p><b>Year:</b> 2023</p>
+        <p><b>Rating:</b> PG</p>
+        <p><b>Director:</b> Larry Yang</p>
+        <p><b>Runtime:</b> 2h 6m</p>
+        <p><b>Genres:</b> Drama/Comedy</p><br>
+        <p><b>Summary:</b><br>
+            Washed-up stuntman Luo can barely make ends meet, let alone take care of his beloved stunt horse, Red Hare. Luo reluctantly seeks help from his estranged daughter and her lawyer boyfriend when notified the horse may be auctioned off to pay his debts. Luo and Red Hare become an overnight media sensation when their fight with debt collectors goes viral.
+        </p>
+                
+       
+        </div>
+        <div class="trailer">
+            
+            <div class="realTrailer">
+            <h2 class="h2">Movie Trailer: </h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/k5aVcHpl_Xw" title="&quot;Ride On&quot; (2023) (龙马精神) | Official Trailer 2 (Int. Subs)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button4">
+                <div class="trailerButton">
+                    <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                    <script type="text/javascript">
+                        function copyLink(){
+                            let link = 'https://youtu.be/5PSNL1qE6VY?si=jTIEbFGQ-FZJykSt';
+                            navigator.clipboard.writeText(link);
+                            alert('Youtube link copied to the clipboard.');
+                        }
+                    </script>
+                </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-858141682.jpg">
+                </div>
+                <div class="name">      
+                    Jackie Chan
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://wiki.d-addicts.com/images/d/d5/Liu_Hao_Cun.jpg">
+                </div>
+                <div class="name">
+                    Liu Haocun
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://i.mydramalist.com/BZwDl_5f.jpg">
+                </div>
+                <div class="name">
+                    Guo Qillin
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://wiki.d-addicts.com/images/e/ed/WuJing.jpg">
+                </div>
+                <div class="name">
+                    Wu Jing
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="data:image/jpeg;base64,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">
+                </div>
+                <div class="name">
+                    Yu Rongguang
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../movieholic.html " target="_blank"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../movies.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>

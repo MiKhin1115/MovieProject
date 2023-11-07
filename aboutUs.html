@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="aboutUs.css">
+    <title>Movie Holic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="icon" href="./favicon_io/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <nav class="menu_bar">
+            <img src="images/logo.png" alt="logo" id="logo" width="100px" height="80px">
+        <ul>
+            <li><a href="home.html" ><pre>Home</pre></a></li>
+            <li><a href="aboutUs.html"  class="active"><pre>About Us</pre></a></li>
+            <li><a href="movies.html"><pre>Movies</pre></a></li>
+            <li><a href="series.html"><pre>Series</pre></a></li>  
+        </ul>   
+        </nav>
+        <nav class="menu_bar2">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" id="logo" width="80px" height="50px">
+            </div>            
+            <div id="toggle-button">
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+            <div class="dropdown">
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="aboutUs.html"><li>About Us</li></a>
+                    <a href="movies.html"><li>Movies</li></a>
+                    <a href="series.html"><li>Series</li></a>
+                </ul>
+            </div>
+            <script src="toggle.js"></script>
+        </nav>
+    </header>
+    <main>
+        <div class="first-col">
+            <div class="img">
+                <img src="aboutUs.png" class="img3">
+                <img src="saveImage.png" class="img1">
+            </div>
+            <div class="text">
+                
+                <h2 align="center">Group 1 members from Section C of <br> Batch 10 students at UIT</h2>
+                <br><br>
+                <div class="text-con">
+                    <div class="text-letter" >We are doing this web project namely "Movie Holic" <br>for the second semester.<br>
+                        There are totally six of us; <br>
+                        Mg Min Swam Pyae, Ma Htet Yupar Tun,<br>
+                        Ma Phoo Pyae Sone Thu, Ma Myat Noe Thu,<br>
+                        Ma Chaw Hsu Yee Htut, and Mi Khin Han Thar Soe.<br>
+                        You will know a movie's information,including trailer.<br>
+                        We collect all the good movies on our website.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <marquee class="Marquee" loop="-1" scrollamount="5">
+            <font size="6" class="Marquee-color">A lot of genres of movies & series are provided. Feel free to use our website!
+                Thank you so much for your attention. </font>
+        </marquee>
+        <div class="count">
+            <div class="movie"><p><b>Movies</b></p>&nbsp;<p id="counting-movie">0</p></div>
+            <div class="serie"><p><b>Series</b></p>&nbsp;<p id="counting-series">0</p></div>
+            <script src="script.js"></script>
+        </div>
+        
+    
+        <script type="text/javascript">
+           
+        const countingMovie = document.getElementById("counting-movie");
+        const countingSerie = document.getElementById("counting-series");
+        const countingActor = document.getElementById("counting-actor");
+
+        const targetNumbers = [150, 100, 80]; // Change these to your desired target numbers
+        const duration = 2000; // Change this to the duration of the animation in milliseconds
+        const interval = 5; // Change this to the interval between updates in milliseconds
+
+        function startCountAnimation(element, targetNumber) {
+            let currentNumber = 0;
+            const increment = (targetNumber / (duration / interval));
+
+            const countAnimation = setInterval(() => {
+                currentNumber += increment;
+
+                if (currentNumber >= targetNumber) {
+                    element.textContent = targetNumber;
+                    clearInterval(countAnimation);
+                } else {
+                    element.textContent = Math.round(currentNumber);
+                }
+            }, interval);
+        }
+
+        startCountAnimation(countingMovie, targetNumbers[0]);
+        startCountAnimation(countingSerie, targetNumbers[1]);
+        startCountAnimation(countingActor, targetNumbers[2]);
+        </script>
+    </main>
+
+</body>
+</html>

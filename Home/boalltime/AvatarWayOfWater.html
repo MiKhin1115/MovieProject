@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar2</title>
+    <script src="star.js" defer></script>
+    <link rel="stylesheet" href="movie2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../favicon_io/favicon-32x32.png">
+</head>
+<body>
+    
+    
+    
+    <div class="firstDiv">
+        <div class="description-box">
+            <h1>Avatar: The Way of Water</h1><br>
+            <img src="../../all_time/avatar2.jpg" style="float: right; width: 200px; height: 300px;">
+            
+            <div>
+                <b>Rating:</b> 
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+               <br>
+                <p>
+                    <span><b>IMDB: </b>7.6</span>
+                    <span><b>Rotten Tomato: </b>76%</span>
+                </p>
+            </div><br>
+            
+            <br>
+            <p><b>Year:</b> 2023</p>
+            <p><b>Rating:</b> PG-13</p>
+            <p><b>Director:</b> James Cameron</p>
+            <p><b>Runtime:</b>3h 12m</p>
+            <p><b>Genres:</b> Sci-Fic, Action</p><br>
+            <p><b>Summary:</b><br>
+                Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.
+            </p></div>
+            <div class="trailer">
+            <div class="realTrailer">
+            <h2 class="h2">Movie Tralier: </h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/a8Gx8wiNbs8?si=9tWI5rE6tK5SBZg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+            <div class="button4">
+            <div class="trailerButton">
+                <button onclick="copyLink()" id="share"><i class="fa-solid fa-share"></i>Share</button>
+                <script type="text/javascript">
+                    function copyLink(){
+                        let link = 'https://youtu.be/a8Gx8wiNbs8?si=9tWI5rE6tK5SBZg8';
+                        navigator.clipboard.writeText(link);
+                        alert('Youtube link copied to the clipboard.');
+                    }
+                </script>
+                <button onclick="document.getElementById('cmtBox').style.display='block'" id="comment" style="width: 100px;">Add Comment</button>
+                <button onclick="document.getElementById('cmtBox').style.display='none'" id="submit" style="width: 130px;">Submit Comment</button>
+            </div>
+            <div class="trailerButton-like">
+                <button style="background-color: black;" class="likebtn">
+                    <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                </button>
+                <input type="number" class="input1" value="0" name="">
+                <button style="background-color: black;" class="dislikebtn">
+                    <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                </button>    
+                <input type="number" class="input2" value="0" name="">
+                <script type="text/javascript">
+                    let likebtns = document.querySelectorAll('.likebtn');
+                    let dislikebtns = document.querySelectorAll('.dislikebtn');
+                    let input1s = document.querySelectorAll('.input1');
+                    let input2s = document.querySelectorAll('.input2');
+                
+                    likebtns.forEach((likebtn, index) => {
+                        likebtn.addEventListener('click', () => {
+                            input1s[index].value = parseInt(input1s[index].value) + 1;
+                        });
+                    });
+                
+                    dislikebtns.forEach((dislikebtn, index) => {
+                        dislikebtn.addEventListener('click', () => {
+                            input2s[index].value = parseInt(input2s[index].value) + 1;
+                        });
+                    });
+                </script>
+                
+            </div>
+           </div>
+           <textarea name="comment" id="cmtBox" cols="70" rows="5" placeholder="Enter a comment..." style="border-radius: 10px; padding: 5px; display: none;"></textarea>
+        </div>
+    </div>
+   
+    <div class="secondDiv">
+        <h1>&emsp;Cast:</h1>
+        <div class="cast">            
+            <div class="eachCast">
+                <div class="image">    
+                    <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQD89HJuXUBux26oYaPBve-f7HvxfqjQZUZXYI3-NAc21ovestEyo-bCs0VKYGlXJde1ht77pZwYrrrRfQ">
+                </div>
+                <div class="name">
+                    Sam Worthington
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQ7Ih2j2cTNlrfz8OmiLuSPcVSIGIg-I7PsdNBIHapEuFuiR7l7vEikoQhU-qONEEa-AtPH8yOPPBQDPkc">
+                </div>
+                <div class="name">
+                    Zoe Saldana
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://images.fandango.com/ImageRenderer/300/0/redesign/static/img/default_poster.png/0/images/masterrepository/performer%20images/573919/michellerodriguez162624802.jpg">
+                </div>
+                <div class="name">
+                    Michelle Rodriguez
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://flxt.tmsimg.com/assets/73978_v9_bb.jpg">
+                </div>
+                <div class="name">
+                    Stephen Lang
+                </div>
+            </div>
+            <div class="eachCast">
+                <div class="image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTk1MTcyNTE3OV5BMl5BanBnXkFtZTcwMTA0MTMyMw@@._V1_FMjpg_UX1000_.jpg">
+                </div>
+                <div class="name">
+                    Sigourney Weaver
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="goHome"><button><a href="../../home.html"><i class="fa-solid fa-house"></i></a></button></div>
+        <div class="explore"><button><a href="../../movies.html"><i class="fa-solid fa-arrow-right"></i></a></button></div>
+    </div>
+
+</body>
+</html>
